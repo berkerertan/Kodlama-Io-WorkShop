@@ -10,7 +10,7 @@ namespace Kodlama_Io_WorkShop.Entities
     {
         public Category()
         {
-            
+           
         }
 
         public Category(int id, string categoryName)

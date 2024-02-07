@@ -13,7 +13,7 @@ namespace Kodlama_Io_WorkShop.Entities
             
         }
 
-        public Trainer(int id, string trainerName,List<Course> Course)
+        public Trainer(int id, string trainerName)
         {
             TrainerId = id;
             TrainerName = trainerName;
