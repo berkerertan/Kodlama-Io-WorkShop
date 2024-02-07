@@ -22,7 +22,7 @@ namespace Kodlama_Io_WorkShop
 
 
 
-            Trainer trainers = new Trainers(1,"31231",);
+ 
 
 
 
