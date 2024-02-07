@@ -20,11 +20,10 @@ namespace Kodlama_Io_WorkShop
             //Console.WriteLine($"Course Name: {course4.CourseName}, Completion Rate: {course4.Complete},{course4.Trainer}");
             //Console.WriteLine($"Course Name: {course5.CourseName}, Completion Rate: {course5.Complete},{course5.Trainer}");
 
-
+            
             Trainer trainer1 = new Trainer(1,"Engin Demiroğ");
-            Category category1 = new Category(1, "Programlama");
             Course kurs1 = new Course(1, "2024 Yazılım Gel.Kam.(c#)", 0, "Kurs", 0, trainer1);
-            Console.WriteLine($"Course Name: {kurs1.CourseName}, Ucret : {kurs1.Price}, Completion Rate: {kurs1.Complete},{kurs1.Trainer}");
+            Console.WriteLine($"Course Name: {kurs1.CourseName}, Ucret : {kurs1.Price}, Completion Rate: {kurs1.Complete},eğitmen: {kurs1.Trainer.TrainerName}");
 
 
 

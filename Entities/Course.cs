@@ -15,14 +15,15 @@ namespace Kodlama_Io_WorkShop.Entities
 
         public Course(int courseId, string courseName,
             int complete, string description,
-            decimal price,Trainer Trainer)
+            decimal price,Trainer trainer)
         {
             CourseId = courseId;
             CourseName = courseName;
             Complete = complete;
             Description = description;
             Price = price;
-            Trainer = Trainer;
+            Trainer = trainer;
+
         }
 
         public int CourseId { get; set; }
