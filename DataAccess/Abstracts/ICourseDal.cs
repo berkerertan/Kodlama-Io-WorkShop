@@ -12,7 +12,8 @@ namespace Kodlama_Io_WorkShop.DataAccess.Abstracts
         public void Add(Course course);
         public void Delete(Course course);
         public void Update(Course course);
+        public Course GetByIdCourse(int id);
 
-        public List<Course> GetAll();
+        public List<Course> GetCourses();
     }
 }

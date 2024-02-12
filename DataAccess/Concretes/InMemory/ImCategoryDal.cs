@@ -25,14 +25,28 @@ namespace Kodlama_Io_WorkShop.DataAccess.Concretes.InMemory
             categories.Remove(category);
         }
 
-        public List<Category> GetAll()
+        public Category GetByIdCategory(int id)
+        {
+            return categories.FirstOrDefault(c=>c.CategoryId == id);
+        }
+
+        public List<Category> GetCategories()
         {
             return categories;
         }
 
         public void Update(Category category)
         {
-            throw new NotImplementedException();
+            Category updateToCategory = categories.FirstOrDefault(c => c.CategoryId == category.CategoryId);
+            if (updateToCategory != null)
+            {
+                updateToCategory.CategoryName = category.CategoryName;
+            }
+            else
+            {
+                // Handle category not found error
+                throw new Exception("Category not found");
+            }
         }
     }
 }

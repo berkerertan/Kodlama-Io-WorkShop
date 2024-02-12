@@ -8,10 +8,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Business\Abstracts\" />
-    <Folder Include="Business\Concretes\" />
-    <Folder Include="Business\Dtos\Responses\" />
-  </ItemGroup>
-
 </Project>

@@ -11,9 +11,11 @@ namespace Kodlama_Io_WorkShop.DataAccess.Abstracts
     {
         public void Add(Trainer trainer);
         public void Delete(Trainer trainer);
-        public void Update(Trainer trainer, string yeniIsim);
+        public void Update(Trainer trainer);
 
-        public List<Trainer> GetAll();
+        public Trainer GetByIdTrainer(int id);
+
+        public List<Trainer> GetTrainers();
 
     }
 }

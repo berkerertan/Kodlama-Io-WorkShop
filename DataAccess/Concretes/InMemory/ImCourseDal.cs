@@ -29,14 +29,28 @@ namespace Kodlama_Io_WorkShop.DataAccess.Concretes.InMemory
             courses.Remove(course);
         }
 
-        public List<Course> GetAll()
+        public List<Course> GetCourses()
         {
             return courses;
+        }
+        public Course GetByIdCourse(int id)
+        {
+            return courses.FirstOrDefault(c => c.CourseId == id);
         }
 
         public void Update(Course course)
         {
-            throw new NotImplementedException();
+            Course updateToCourse = courses.FirstOrDefault(c => c.CourseId == course.CourseId);
+            if (updateToCourse != null)
+            {
+                updateToCourse.CourseName = course.CourseName;
+            }
+            else
+            {
+                // Handle category not found error
+                throw new Exception("Course not found");
+            }
         }
+
     }
 }

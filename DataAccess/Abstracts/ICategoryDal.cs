@@ -12,7 +12,7 @@ namespace Kodlama_Io_WorkShop.DataAccess.Abstracts
         public void Add(Category category);
         public void Delete(Category category);
         public void Update(Category category);
-
-        public List<Category> GetAll();
+        public Category GetByIdCategory(int id);
+        public List<Category> GetCategories();
     }
 }
